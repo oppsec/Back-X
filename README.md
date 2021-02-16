@@ -3,7 +3,7 @@
  _____________________
 |                     |
 |  AUTHOR: Gr3n0xX    |
-|Initial commit:      |
+|  Initial commit:    |
 |  16/02/2021         |
 |                     |
 |_____________________|
