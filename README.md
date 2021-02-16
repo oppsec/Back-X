@@ -1,2 +1,10 @@
 # Back-X
-Python Backdoor Generator
+```
+ _____________________
+|                     |
+|  AUTHOR: Gr3n0xX    |
+|Initial commit:      |
+|  16/02/2021         |
+|                     |
+|_____________________|
+```
