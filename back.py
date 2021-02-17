@@ -82,7 +82,7 @@ try:
     print("[-] Connection initiated!")
     
 except ConnectionRefusedError:
-    print("[!] Connection refused, check IpAddres or see if the port you selected is open...)
+    print("[!] Connection refused, check IpAddres or see if the port you selected is open...")
     sys.exit()
     
 except TimeoutError:
