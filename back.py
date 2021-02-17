@@ -82,6 +82,7 @@ try:
     print("[-] Connection initiated!")
     
 except ConnectionRefusedError:
+    os.system("clear")
     print("[!] Connection refused, check IpAddres or see if the port you selected is open...")
     sys.exit()
     
