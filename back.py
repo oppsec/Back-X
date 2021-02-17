@@ -20,7 +20,7 @@ if sys.version_info[0] < 3:
     
 def banner():
     os.system("clear")
-    print ("""
+    print (Fore.BLUE + """
 
            _________
          /'        /|
