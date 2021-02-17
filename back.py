@@ -76,9 +76,15 @@ REMOTE_HOST = '127.0.0.1' # Change
 REMOTE_PORT = 8080
 client = socket.socket()
 print("[-] Connection Initiating...")
+
 try:
     client.connect((REMOTE_HOST, REMOTE_PORT))
     print("[-] Connection initiated!")
+    
+except ConnectionRefusedError:
+    print("[!] Connection refused, check IpAddres or see if the port you selected is open...)
+    sys.exit()
+    
 except TimeoutError:
     os.system("clear")
     print("[!] Connection refused")
