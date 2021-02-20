@@ -91,6 +91,11 @@ try:
     client.connect((LHOST, LPORT))
     print("[-] Connection initiated!")
     
+except ConnectionAbortedError:
+    os.system("clear")
+    print("[!] Connection aborted, check IpAddres or see if the port you selected is open...")
+    sys.exit()
+    
 except ConnectionRefusedError:
     os.system("clear")
     print("[!] Connection refused, check IpAddres or see if the port you selected is open...")
