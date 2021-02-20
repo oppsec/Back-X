@@ -69,7 +69,7 @@ def finish():
 
     
 banner()
-ip = input("[!] Select Your LHOST")
+ip = input("[!] Select Your LHOST: ")
 file_name = input("[!] Insert a file name.py: ")
 arq = open(file_name, 'w')
 finish()
