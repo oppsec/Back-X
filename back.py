@@ -6,6 +6,7 @@ try:
     import os
     import time
     from colorama import Fore, Back, Style
+    
 except ModuleNotFoundError:
     print(Fore.RED + '[!] I require colorama, install it')
     sys.exit()
