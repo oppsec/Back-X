@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 # Author: Gr3n0xX
 # Python backdoor generator 
 try:
