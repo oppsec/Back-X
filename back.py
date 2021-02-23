@@ -72,7 +72,6 @@ def finish():
 
     
 banner()
-ip = input("[!] Select Your LHOST: ")
-
+pyload()
 os.system("clear")
 print ("[*] Finish!!!")
