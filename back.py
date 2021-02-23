@@ -73,5 +73,6 @@ def finish():
     
 banner()
 pyload()
+finish()
 os.system("clear")
 print ("[*] Finish!!!")
