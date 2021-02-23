@@ -69,7 +69,6 @@ def finish():
     print ("100%")
     time.sleep(3)
     
-
     
 banner()
 pyload()
