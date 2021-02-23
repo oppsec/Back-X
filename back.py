@@ -51,23 +51,7 @@ def banner():
 
 Visit https://github.com/grenoxx For More Tools:""")
 
-def finish():
-    print ("[*] Generating...")
-    os.system("clear")
-    print ("1%")
-    time.sleep(1.9)
-    os.system("clear")
-    print ("15%")
-    time.sleep(1.9)
-    os.system("clear")
-    print ("30%")
-    time.sleep(1.9)
-    os.system("clear")
-    print ("50%")
-    time.sleep(1.9)
-    os.system("clear")
-    print ("100%")
-    time.sleep(3)
+
     
     
 banner()
