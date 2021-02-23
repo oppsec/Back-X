@@ -7,6 +7,7 @@ try:
     import os
     import time
     from payloads.pythonpayload import pyload
+    from src.loanding import load
     from colorama import Fore, Back, Style
     
 except ModuleNotFoundError:
@@ -56,6 +57,6 @@ Visit https://github.com/grenoxx For More Tools:""")
     
 banner()
 pyload()
-finish()
+load()
 os.system("clear")
 print ("[*] Finish!!!")
